@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/bottom_cardView"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/song_img"/>
+
+        <TextView
+            android:id="@+id/songNameSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Baby song"/>
+
+        <Button
+            android:id="@+id/playBtnSmallScreen"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/play"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
